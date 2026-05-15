@@ -1,0 +1,87 @@
+body{
+                                                                                                                                                                                    background-color: darkgrey;
+}
+p
+{
+    color: black;
+    font-size: 16px;
+}
+h1{
+    color:aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Productos{
+width: 100vw; /* 100% del ancho de la pantalla */
+height: 50vh; /* 50% del alto de la pantalla */ 
+display: flex;
+gap: 2px;
+text-decoration: none;
+text-align: center;
+justify-content: space-around;
+padding-block: 0%;
+box-shadow: 10%;
+}
+.art{
+width: 30vw;
+border:2px solid #000000;
+border-radius: 4%;
+}
+.art img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+}
+.art ul{
+      list-style-type: none; /* Quita los puntos o viñetas */
+      text-decoration: none;
+  padding: 0;            /* Quita el espacio interior izquierdo por defecto */
+  margin: 0;  
+}
+.Resenias{
+width: 100vw; /* 100% del ancho de la pantalla */
+height: 50vh; /* 50% del alto de la pantalla */
+background-color: lightcoral;  
+display: flex;
+text-decoration: none;
+justify-content: space-around;
+padding: 0%;
+}
+.roboto-mono- <uniquifier>{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.imglogo{
+
+  width: 50px;
+  height: 50px;
+
+}
+
+.nav-list{
+    list-style: none;
+    text-decoration: none;
+    font-size: 26px;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none; 
+}
+
+.item{
+    flex: 1 1 200px;
+    margin: 10px;
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+}
