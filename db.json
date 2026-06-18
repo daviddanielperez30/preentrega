@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Micro SD 64GB",
+      "price": 25000,
+      "category": "Accesorio",
+      "description": "Memoria micro SD de 64GB para guardar tus grabaciones con rapidez y seguridad.",
+      "image": "imagenes/microsd.png",
+      "shortName": "SD"
+    },
+    {
+      "id": 2,
+      "name": "TAPO C100",
+      "price": 85000,
+      "category": "Cámara",
+      "description": "Cámara compacta con visión clara para monitorear espacios pequeños.",
+      "image": "",
+      "shortName": "C100"
+    },
+    {
+      "id": 3,
+      "name": "TAPO C200",
+      "price": 95000,
+      "category": "Cámara",
+      "description": "Control remoto y seguimiento de movimiento para mayor tranquilidad.",
+      "image": "imagenes/tapoc200.png",
+      "shortName": "C200"
+    },
+    {
+      "id": 4,
+      "name": "TAPO C210",
+      "price": 120000,
+      "category": "Cámara",
+      "description": "Video nítido y funciones inteligentes para cuidar tu hogar todos los días.",
+      "image": "imagenes/tapoc210.png",
+      "shortName": "C210"
+    }
+  ]
+}

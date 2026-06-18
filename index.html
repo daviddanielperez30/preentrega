@@ -1,79 +1,170 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<title>Es el titulo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-   <body>
-<header>
-    <img  class="imglogo" src="imagenes/logo.png" alt="logo de la empresa">
-    <nav>
-        <ul class="container">
-         <li><a href="">Inicio</a></li>
-         <li><a href="">Nosotros</a></li>
-         <li><a href="">Productos</a></li>
-         <li><a href="">Servicios</a></li>
-         <li><a href="">Contacto</a></li>
-        </ul>
-       </nav>
-</header>
-<main>
-    <section class="Productos">
-      <article class="art">
-        <ul class="lista-limpia">
-  <li>TAPO C100</li>
-  <li><img src="imagenes/microsd.png" alt="micro sd"></li>
-  <li>Memoria micro SD de 64GB 150 Mbps</li>
-</ul>
-        
-        
-      </article>
-      <article class="art">TAPO C200</article>
-      <article class="art">TAPO C210</article>
-    </section>
-    <section>
-        <video width="640" height="360" controls >
-          <source src="video.mp4" type="video/mp4">
-        </video>
-    </section>
-        <section class="Resenias">
-      <article>Testimonio 1</article>
-      <article>Testimonio 2</article>
-      <article>Testimonio 3</article>
-    </section>
-    <section>
-        <form
-  action="https://formspree.io/f/mkgbbdkj"
-  method="POST"  target="_blank">
-  <label>
-    Su email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Su mensaje:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-    </section>
-</main>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="brand">
+        <img class="imglogo" src="imagenes/logo.png" alt="logo de la empresa">
+        <span>TechStore</span>
+      </a>
 
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button id="cart-toggle" class="cart-toggle button button-secondary" type="button" aria-label="Abrir carrito de compras">
+          <span>Carrito</span>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Cámaras inteligentes y accesorios</p>
+        <h1>Seguridad moderna para tu hogar</h1>
+        <p class="hero-text">
+          Descubrí productos simples, confiables y diseñados para cuidar lo que más importa.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#productos">Ver productos</a>
+          <a class="button button-secondary" href="#contacto">Contactar</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section products" id="productos">
+      <div class="section-heading">
+        <p>Productos destacados</p>
+        <h2>Elegí la solución ideal</h2>
+      </div>
+
+      <div id="product-list" class="product-grid" aria-live="polite">
+        <div class="product-loading">Cargando productos desde la API...</div>
+      </div>
+    </section>
+
+    <section class="demo" id="demo">
+      <div class="demo-content">
+        <p>Demo del producto</p>
+        <h2>Mirá cómo funciona</h2>
+        <video controls poster="">
+          <source src="video.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </section>
+
+    <section class="section reviews" id="resenas">
+      <div class="section-heading">
+        <p>Testimonios</p>
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“La instalación fue muy simple y la calidad de imagen superó mis expectativas.”</p>
+          <strong>Cliente satisfecho</strong>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“Puedo revisar mi casa desde el celular en cualquier momento. Muy recomendable.”</p>
+          <strong>Usuario frecuente</strong>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>“El acompañamiento y la atención fueron excelentes. Todo llegó en perfectas condiciones.”</p>
+          <strong>Nuevo cliente</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="contact-card">
+        <div>
+          <p>Contacto</p>
+          <h2>¿Tenés alguna consulta?</h2>
+          <p class="contact-text">
+            Escribinos y te ayudamos a elegir el producto que mejor se adapta a tus necesidades.
+          </p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mkgbbdkj" method="POST" target="_blank">
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="tu@email.com" required>
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="message" placeholder="Contanos qué necesitás..." required></textarea>
+          </label>
+          <button class="button button-primary form-button" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-overlay" class="cart-overlay" hidden></div>
+
+  <aside id="cart-sidebar" class="cart-sidebar" aria-hidden="true" aria-label="Carrito de compras" hidden>
+    <div class="cart-header">
+      <div>
+        <p>Carrito</p>
+        <h2>Tu compra</h2>
+      </div>
+      <button id="close-cart" class="icon-button" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <div>
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">$0</strong>
+      </div>
+      <div>
+        <span>Total</span>
+        <strong id="cart-total">$0</strong>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <button id="clear-cart-button" class="button button-secondary" type="button">Vaciar carrito</button>
+      <button id="checkout-button" class="button button-primary" type="button">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <p>© 2026 TechStore. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </footer>
+
+  <script type="module" src="api.js"></script>
+  <script type="module" src="cart.js"></script>
 </body>
-<footer>
-  <a href="https://facebook.com" target="_blank">
-  <img src="imagenes/iconfacebook.png" alt="Facebook" style="width:30px; height:30px;">
-</a>
-<a href="https://instagram.com" target="_blank">
-  <img src="imagenes/iconinsta.png" alt="Instagram" style="width:30px; height:30px;">
-</a>
-<a href="https://youtube.com" target="_blank">
-  <img src="imagenes/iconyoutube.png" alt="YouTube" style="width:30px; height:30px;">
-</a>
-</footer>
 </html>
